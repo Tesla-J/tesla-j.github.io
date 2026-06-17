@@ -8,48 +8,78 @@
 </head>
 <body class="bg-gray-900 text-white">
     <header class="top-0 z-50 w-full fixed bg-gray-900/80 backdrop-blur-md">
-        <nav class="flex items-center justify-between p-4 lg:px-8">
-            <p class="text-3xl font-bold">Rafael Marcos</p>
-            <ul class="inline-flex items-center justify-between px-4 lg:px-8">
-                <li><a class="lg:px-4" href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                <li><a class="lg:px-4" href="#projects">Projects</a></li>
-                <li><a class="lg:px-4" href="#freelas">Freelancing</a></li>
-                <li><a class="lg:px-4" href="#contact">Contact</a></li>
-                <li><a class="lg:px-4" href="#">CV</a></li>
+        <nav class="flex items-center justify-between p-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
+            <p class="text-xl sm:text-2xl lg:text-3xl font-bold whitespace-nowrap">Rafael Marcos</p>
+            <ul class="hidden lg:flex items-center gap-8 text-base">
+                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#freelas">Freelancing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">CV</a></li>
             </ul>
+            <button id="menu-btn" class="lg:hidden p-2 text-gray-200 cursor-pointer" aria-label="Toggle menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-4 sm:px-6 pb-4 mx-auto max-w-7xl">
+            <ul class="flex flex-col gap-2 text-base border-t border-gray-700 pt-4">
+                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-lg hover:bg-white/5">Blog</a></li>
+                <li><a href="#projects" class="block px-3 py-2 rounded-lg hover:bg-white/5">Projects</a></li>
+                <li><a href="#freelas" class="block px-3 py-2 rounded-lg hover:bg-white/5">Freelancing</a></li>
+                <li><a href="#contact" class="block px-3 py-2 rounded-lg hover:bg-white/5">Contact</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-lg hover:bg-white/5">CV</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="relative flex items-center justify-center w-full min-h-screen overflow-hidden">
+    <section class="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden px-4 sm:px-8">
         <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu blur-3xl sm:-top-80">
             <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
         </div>
         <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu blur-3xl sm:top-[calc(100%-30rem)]">
             <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
         </div>
-        <div class="text-9xl px-8">
-            <p>ANDROID</p>
-            <p>DEVELOPER</p>
+        <div class="flex flex-col items-center lg:flex-row lg:items-center gap-4 sm:gap-8 lg:gap-16 mx-auto max-w-7xl">
+            <div class="text-5xl sm:text-7xl lg:text-8xl xl:text-9xl text-center lg:text-left leading-tight">
+                <p>ANDROID</p>
+                <p>DEVELOPER</p>
+            </div>
+            <img src="kotlin/kotlin-seeklogo.svg" alt="kotlin logo" class="w-24 sm:w-32 lg:w-40 xl:w-48 h-auto">
         </div>
-        <img src="kotlin/kotlin-seeklogo.svg" alt="kotlin logo">
     </section>
-    <section class="min-h-screen">
-        <h1 id="projects" class="text-4xl font-bold flex justify-center">Projects</h1>
+    <section class="min-h-screen flex items-center justify-center px-4 sm:px-8">
+        <h1 id="projects" class="text-3xl sm:text-4xl lg:text-5xl font-bold">Projects</h1>
     </section>
-    <section class="min-h-screen">
-        <h1 id="freelas" class="text-4xl font-bold flex justify-center">Freelancing</h1>
+    <section class="min-h-screen flex items-center justify-center px-4 sm:px-8">
+        <h1 id="freelas" class="text-3xl sm:text-4xl lg:text-5xl font-bold">Freelancing</h1>
     </section>
-    <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-8">
-        <h1 class="text-4xl font-bold mb-12">Contact</h1>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 w-full max-w-md">
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12">Contact</h1>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 w-full max-w-sm sm:max-w-md lg:max-w-lg">
             <input type="email" name="email" placeholder="Your email" required
-                   class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                   class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base">
             <textarea name="message" placeholder="Your message" rows="5" required
-                      class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                      class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"></textarea>
             <button type="submit"
-                    class="bg-indigo-500 hover:bg-indigo-400 rounded-md px-4 py-3 font-semibold transition cursor-pointer">
+                    class="bg-indigo-500 hover:bg-indigo-400 rounded-md px-4 py-3 font-semibold transition cursor-pointer text-sm sm:text-base">
                 Send Message
             </button>
         </form>
     </section>
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    btn.innerHTML = menu.classList.contains('hidden')
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+});
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.add('hidden');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+}));
+</script>
 </body>
 </html>

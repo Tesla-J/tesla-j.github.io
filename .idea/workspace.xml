@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c26c4c2-e71e-4471-8f5a-442676a5957a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bccfa839aa4b38489c76.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composeApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composeApp.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composeResources/hello_sekai.composeapp.generated.resources/drawable/compose-multiplatform.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composeResources/hello_sekai.composeapp.generated.resources/values/strings.webMain.cvr" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-reexport-symbols.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skiko.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skiko.wasm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skikod8.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781647907870</updated>
       <workItem from="1781647911431" duration="6528000" />
-      <workItem from="1781702077449" duration="1826000" />
+      <workItem from="1781702077449" duration="2213000" />
     </task>
     <servers />
   </component>
