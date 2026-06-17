@@ -50,6 +50,15 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(1.5rem);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -113,8 +122,8 @@
         </p>
     </section>
     <section id="skills" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Skills</h1>
-        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-2xl">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Skills</h1>
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-2xl scroll-animate" style="transition-delay: 0.1s">
             <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-[#7F52FF]/15 text-[#7F52FF] border border-[#7F52FF]/20">Kotlin</span>
             <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-orange-500/15 text-orange-400 border border-orange-500/20">Java</span>
             <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-blue-500/15 text-blue-400 border border-blue-500/20">Jetpack Compose</span>
@@ -126,9 +135,9 @@
         </div>
     </section>
     <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Experience</h1>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Experience</h1>
         <div class="flex flex-col gap-8 w-full max-w-2xl">
-            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30 scroll-animate" style="transition-delay: 0.1s">
                 <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
                 <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
@@ -142,7 +151,7 @@
                     </p>
                 </div>
             </div>
-            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30 scroll-animate" style="transition-delay: 0.2s">
                 <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
                 <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
@@ -159,9 +168,9 @@
         </div>
     </section>
     <section id="education" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Education</h1>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Education</h1>
         <div class="flex flex-col gap-8 w-full max-w-2xl">
-            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30 scroll-animate" style="transition-delay: 0.1s">
                 <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
                 <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
@@ -175,7 +184,7 @@
                     </p>
                 </div>
             </div>
-            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30 scroll-animate" style="transition-delay: 0.2s">
                 <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
                 <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
@@ -192,9 +201,9 @@
         </div>
     </section>
     <section id="hackathons" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Hackathons</h1>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Hackathons</h1>
         <div class="flex flex-col gap-8 w-full max-w-2xl">
-            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30 scroll-animate" style="transition-delay: 0.1s">
                 <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
                 <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
@@ -218,9 +227,9 @@
         </div>
     </section>
     <section id="projects" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-8 sm:gap-12">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Projects</h1>
-        <p class="text-gray-400 text-center max-w-md">Some things I've built</p>
-        <div class="relative w-full max-w-5xl">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Projects</h1>
+        <p class="text-gray-400 text-center max-w-md scroll-animate" style="transition-delay: 0.1s">Some things I've built</p>
+        <div class="relative w-full max-w-5xl scroll-animate" style="transition-delay: 0.2s">
             <div id="projects-track" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide scroll-smooth">
                 <!-- Project Card - Add more by copying this block -->
                 <div class="flex-shrink-0 w-full snap-center">
@@ -264,25 +273,25 @@
         </div>
     </section>
     <section id="freelas" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-12">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Freelancing</h1>
-        <p class="text-gray-400 text-center max-w-md">Available for hire on these platforms</p>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Freelancing</h1>
+        <p class="text-gray-400 text-center max-w-md scroll-animate" style="transition-delay: 0.1s">Available for hire on these platforms</p>
         <div class="flex flex-wrap items-start justify-center gap-10 sm:gap-14 lg:gap-20">
             <a href="https://www.linkedin.com/in/rafael-marcos-41359a21b" target="_blank" rel="noopener noreferrer"
-               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32 scroll-animate" style="transition-delay: 0.15s">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     <img src="images/linkedin.svg" alt="LinkedIn" class="w-full h-full object-contain">
                 </div>
                 <span class="text-sm sm:text-base text-gray-400 transition-colors duration-300 group-hover:text-white text-center">LinkedIn</span>
             </a>
             <a href="https://www.upwork.com/freelancers/~01e3c18defcdbc0280" target="_blank" rel="noopener noreferrer"
-               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32 scroll-animate" style="transition-delay: 0.25s">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     <img src="images/upwork.svg" alt="Upwork" class="w-full h-full object-contain">
                 </div>
                 <span class="text-sm sm:text-base text-gray-400 transition-colors duration-300 group-hover:text-white text-center">Upwork</span>
             </a>
             <a href="https://www.fiverr.com/users/rafaelmarcos19" target="_blank" rel="noopener noreferrer"
-               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32 scroll-animate" style="transition-delay: 0.35s">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     <img src="images/fiverr.svg" alt="Fiverr" class="w-full h-full object-contain">
                 </div>
@@ -291,9 +300,9 @@
         </div>
     </section>
     <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-4">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Contact</h1>
-        <p class="text-gray-400 text-center max-w-md mb-4 sm:mb-8">Let's work together — send me a message</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 w-full max-w-sm sm:max-w-md lg:max-w-lg">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold scroll-animate">Contact</h1>
+        <p class="text-gray-400 text-center max-w-md mb-4 sm:mb-8 scroll-animate" style="transition-delay: 0.1s">Let's work together — send me a message</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 w-full max-w-sm sm:max-w-md lg:max-w-lg scroll-animate" style="transition-delay: 0.2s">
             <input type="email" name="email" placeholder="Your email" required
                    class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base">
             <textarea name="message" placeholder="Your message" rows="5" required
@@ -362,6 +371,17 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
     track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
 });
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            scrollObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.scroll-animate').forEach(el => scrollObserver.observe(el));
 </script>
 </body>
 </html>
