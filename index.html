@@ -47,6 +47,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#freelas" class="nav-link">Freelancing</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://github.com/tesla-j" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
                 <li><a href="#" class="nav-link">CV</a></li>
             </ul>
             <button id="menu-btn" class="lg:hidden p-2 text-gray-200 cursor-pointer" aria-label="Toggle menu">
@@ -61,6 +62,7 @@
                 <li><a href="#projects" class="mobile-link block px-3 py-2 rounded-lg">Projects</a></li>
                 <li><a href="#freelas" class="mobile-link block px-3 py-2 rounded-lg">Freelancing</a></li>
                 <li><a href="#contact" class="mobile-link block px-3 py-2 rounded-lg">Contact</a></li>
+                <li><a href="https://github.com/tesla-j" target="_blank" rel="noopener noreferrer" class="mobile-link block px-3 py-2 rounded-lg">GitHub</a></li>
                 <li><a href="#" class="mobile-link block px-3 py-2 rounded-lg">CV</a></li>
             </ul>
         </div>
@@ -77,14 +79,38 @@
                 <p>ANDROID</p>
                 <p>DEVELOPER</p>
             </div>
-            <img src="kotlin/kotlin-seeklogo.svg" alt="kotlin logo" class="w-24 sm:w-32 lg:w-40 xl:w-48 h-auto">
+            <img src="images/kotlin-seeklogo.svg" alt="kotlin logo" class="w-24 sm:w-32 lg:w-40 xl:w-48 h-auto">
         </div>
     </section>
     <section class="min-h-screen flex items-center justify-center px-4 sm:px-8">
         <h1 id="projects" class="text-3xl sm:text-4xl lg:text-5xl font-bold">Projects</h1>
     </section>
-    <section class="min-h-screen flex items-center justify-center px-4 sm:px-8">
-        <h1 id="freelas" class="text-3xl sm:text-4xl lg:text-5xl font-bold">Freelancing</h1>
+    <section id="freelas" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-12">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Freelancing</h1>
+        <p class="text-gray-400 text-center max-w-md">Available for hire on these platforms</p>
+        <div class="flex flex-wrap items-start justify-center gap-10 sm:gap-14 lg:gap-20">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="w-full h-full object-contain">
+                </div>
+                <span class="text-sm sm:text-base text-gray-400 transition-colors duration-300 group-hover:text-white text-center">LinkedIn</span>
+            </a>
+            <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer"
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <img src="images/upwork.svg" alt="Upwork" class="w-full h-full object-contain">
+                </div>
+                <span class="text-sm sm:text-base text-gray-400 transition-colors duration-300 group-hover:text-white text-center">Upwork</span>
+            </a>
+            <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer"
+               class="flex flex-col items-center gap-4 group w-24 sm:w-28 lg:w-32">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <img src="images/fiverr.svg" alt="Fiverr" class="w-full h-full object-contain">
+                </div>
+                <span class="text-sm sm:text-base text-gray-400 transition-colors duration-300 group-hover:text-white text-center">Fiverr</span>
+            </a>
+        </div>
     </section>
     <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12">Contact</h1>
