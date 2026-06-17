@@ -5,17 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Marcos - Portfolio</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <style>
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #7F52FF;
+            transition: width 0.3s ease, left 0.3s ease;
+            border-radius: 1px;
+        }
+        .nav-link:hover {
+            color: #7F52FF;
+            transform: translateY(-1px);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .mobile-link {
+            transition: all 0.3s ease;
+        }
+        .mobile-link:hover {
+            background-color: rgba(127, 82, 255, 0.1);
+            color: #7F52FF;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white">
     <header class="top-0 z-50 w-full fixed bg-gray-900/80 backdrop-blur-md">
         <nav class="flex items-center justify-between p-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
             <p class="text-xl sm:text-2xl lg:text-3xl font-bold whitespace-nowrap">Rafael Marcos</p>
             <ul class="hidden lg:flex items-center gap-8 text-base">
-                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#freelas">Freelancing</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="nav-link">Blog</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#freelas" class="nav-link">Freelancing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link">CV</a></li>
             </ul>
             <button id="menu-btn" class="lg:hidden p-2 text-gray-200 cursor-pointer" aria-label="Toggle menu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
@@ -25,11 +57,11 @@
         </nav>
         <div id="mobile-menu" class="hidden lg:hidden px-4 sm:px-6 pb-4 mx-auto max-w-7xl">
             <ul class="flex flex-col gap-2 text-base border-t border-gray-700 pt-4">
-                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-lg hover:bg-white/5">Blog</a></li>
-                <li><a href="#projects" class="block px-3 py-2 rounded-lg hover:bg-white/5">Projects</a></li>
-                <li><a href="#freelas" class="block px-3 py-2 rounded-lg hover:bg-white/5">Freelancing</a></li>
-                <li><a href="#contact" class="block px-3 py-2 rounded-lg hover:bg-white/5">Contact</a></li>
-                <li><a href="#" class="block px-3 py-2 rounded-lg hover:bg-white/5">CV</a></li>
+                <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="mobile-link block px-3 py-2 rounded-lg">Blog</a></li>
+                <li><a href="#projects" class="mobile-link block px-3 py-2 rounded-lg">Projects</a></li>
+                <li><a href="#freelas" class="mobile-link block px-3 py-2 rounded-lg">Freelancing</a></li>
+                <li><a href="#contact" class="mobile-link block px-3 py-2 rounded-lg">Contact</a></li>
+                <li><a href="#" class="mobile-link block px-3 py-2 rounded-lg">CV</a></li>
             </ul>
         </div>
     </header>
