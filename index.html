@@ -95,17 +95,21 @@
             <div id="projects-track" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide scroll-smooth">
                 <!-- Project Card - Add more by copying this block -->
                 <div class="flex-shrink-0 w-full snap-center">
-                    <div class="flex flex-col md:flex-row bg-gray-800/60 rounded-2xl overflow-hidden border border-gray-700/50">
-                        <div class="md:w-1/2 h-64 md:h-auto bg-gray-700/40 flex items-center justify-center p-8">
-                            <img src="images/kotlin-seeklogo.svg" alt="Kotlin Android App" class="w-32 sm:w-40 h-auto">
+                    <div class="flex flex-col md:flex-row bg-gray-800/60 rounded-2xl overflow-hidden border border-gray-700/50 min-h-[26rem] md:min-h-[22rem]">
+                        <div class="md:w-1/2 h-64 md:h-full bg-gray-700/40">
+                            <img src="images/kotlin-seeklogo.svg" alt="Kotlin Android App" class="w-full h-full object-contain p-6 sm:p-8">
                         </div>
                         <div class="md:w-1/2 p-5 sm:p-7 flex flex-col justify-between gap-4">
                             <div>
                                 <h2 class="text-xl sm:text-2xl font-bold mb-2">Kotlin Android App</h2>
-                                <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                                <p class="text-gray-400 text-sm sm:text-base leading-relaxed mb-3">
                                     Modern Android application built with Kotlin and Jetpack Compose,
                                     following clean architecture and Material Design 3 guidelines.
                                 </p>
+                                <a href="https://github.com/tesla-j" target="_blank" rel="noopener noreferrer"
+                                   class="text-[#7F52FF] font-semibold text-sm sm:text-base hover:underline">
+                                    Know more →
+                                </a>
                             </div>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 text-xs font-medium rounded-full bg-[#7F52FF]/20 text-[#7F52FF]">Kotlin</span>
@@ -113,10 +117,6 @@
                                 <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-400">Android</span>
                                 <span class="px-3 py-1 text-xs font-medium rounded-full bg-orange-500/20 text-orange-400">Material Design</span>
                             </div>
-                            <a href="https://github.com/tesla-j" target="_blank" rel="noopener noreferrer"
-                               class="text-[#7F52FF] font-semibold text-sm sm:text-base hover:underline self-start">
-                                Know more →
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -124,22 +124,20 @@
 
                 <!-- Placeholder for next project -->
                 <div class="flex-shrink-0 w-full snap-center">
-                    <div class="flex flex-col md:flex-row bg-gray-800/60 rounded-2xl overflow-hidden border border-gray-700/50 h-full min-h-[24rem] md:min-h-0">
-                        <div class="md:w-1/2 h-64 md:h-auto bg-gray-700/20 flex items-center justify-center">
-                            <span class="text-gray-500 text-lg">Screenshot</span>
+                    <div class="flex flex-col md:flex-row bg-gray-800/60 rounded-2xl overflow-hidden border border-gray-700/50 min-h-[26rem] md:min-h-[22rem]">
+                        <div class="md:w-1/2 h-64 md:h-full bg-gray-700/20 flex items-center justify-center">
+                            <span class="text-gray-500 text-base sm:text-lg italic">This project is not available yet</span>
                         </div>
                         <div class="md:w-1/2 p-5 sm:p-7 flex flex-col justify-between gap-4">
                             <div>
-                                <h2 class="text-xl sm:text-2xl font-bold mb-2 text-gray-300">Next Project</h2>
-                                <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
-                                    Add your project details here. Replace the screenshot and fill in the description.
+                                <h2 class="text-xl sm:text-2xl font-bold mb-2 text-gray-400">Coming soon</h2>
+                                <p class="text-gray-500 text-sm sm:text-base leading-relaxed mb-3">
+                                    Future projects are being built.
                                 </p>
                             </div>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-700/40 text-gray-400">Tag</span>
-                                <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-700/40 text-gray-400">Tag</span>
+                                <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-700/40 text-gray-500">Soon</span>
                             </div>
-                            <span class="text-gray-600 font-semibold text-sm sm:text-base self-start">Know more →</span>
                         </div>
                     </div>
                 </div>
