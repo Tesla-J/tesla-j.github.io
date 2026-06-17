@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Marcos - Portfolio</title>
+    <title>Rafael Marcos — Android Developer</title>
+    <meta name="description" content="Android Developer specializing in Kotlin and Jetpack Compose. Available for freelance work on Fiverr and Upwork.">
+    <meta property="og:title" content="Rafael Marcos — Android Developer">
+    <meta property="og:description" content="Android Developer specializing in Kotlin and Jetpack Compose. Clean architecture, modern UI, freelance available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tesla-j.github.io">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <style>
+        html { scroll-behavior: smooth; }
         .nav-link {
             position: relative;
             transition: color 0.3s ease, transform 0.3s ease;
@@ -49,8 +56,12 @@
     <header class="top-0 z-50 w-full fixed bg-gray-900/80 backdrop-blur-md">
         <nav class="flex items-center justify-between p-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
             <p class="text-xl sm:text-2xl lg:text-3xl font-bold whitespace-nowrap">Rafael Marcos</p>
-            <ul class="hidden lg:flex items-center gap-8 text-base">
+            <ul class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm xl:text-base">
                 <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="nav-link">Blog</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#freelas" class="nav-link">Freelancing</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -66,6 +77,10 @@
         <div id="mobile-menu" class="hidden lg:hidden px-4 sm:px-6 pb-4 mx-auto max-w-7xl">
             <ul class="flex flex-col gap-2 text-base border-t border-gray-700 pt-4">
                 <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="mobile-link block px-3 py-2 rounded-lg">Blog</a></li>
+                <li><a href="#skills" class="mobile-link block px-3 py-2 rounded-lg">Skills</a></li>
+                <li><a href="#experience" class="mobile-link block px-3 py-2 rounded-lg">Experience</a></li>
+                <li><a href="#education" class="mobile-link block px-3 py-2 rounded-lg">Education</a></li>
+                <li><a href="#hackathons" class="mobile-link block px-3 py-2 rounded-lg">Hackathons</a></li>
                 <li><a href="#projects" class="mobile-link block px-3 py-2 rounded-lg">Projects</a></li>
                 <li><a href="#freelas" class="mobile-link block px-3 py-2 rounded-lg">Freelancing</a></li>
                 <li><a href="#contact" class="mobile-link block px-3 py-2 rounded-lg">Contact</a></li>
@@ -88,12 +103,123 @@
             </div>
             <img src="images/kotlin-seeklogo.svg" alt="kotlin logo" class="w-24 sm:w-32 lg:w-40 xl:w-48 h-auto">
         </div>
-        <p class="text-gray-400 text-base sm:text-lg text-center mt-6 sm:mt-8 max-w-xl">
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <span class="px-4 py-1.5 text-xs sm:text-sm font-medium rounded-full bg-[#7F52FF]/15 text-[#7F52FF] border border-[#7F52FF]/20">Freelance since 2023</span>
+            <span class="px-4 py-1.5 text-xs sm:text-sm font-medium rounded-full bg-blue-500/15 text-blue-400 border border-blue-500/20">Jetpack Compose</span>
+            <span class="px-4 py-1.5 text-xs sm:text-sm font-medium rounded-full bg-green-500/15 text-green-400 border border-green-500/20">Clean Architecture</span>
+        </div>
+        <p class="text-gray-400 text-base sm:text-lg text-center mt-4 sm:mt-6 max-w-xl">
             I develop Android apps with Kotlin (and Java when needed).
         </p>
     </section>
+    <section id="skills" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Skills</h1>
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-2xl">
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-[#7F52FF]/15 text-[#7F52FF] border border-[#7F52FF]/20">Kotlin</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-orange-500/15 text-orange-400 border border-orange-500/20">Java</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-blue-500/15 text-blue-400 border border-blue-500/20">Jetpack Compose</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-gray-500/15 text-gray-300 border border-gray-500/20">Git</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-teal-500/15 text-teal-400 border border-teal-500/20">REST APIs</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/20">Coroutines</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-red-500/15 text-red-400 border border-red-500/20">JUnit</span>
+            <span class="px-4 py-2 text-sm sm:text-base font-medium rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/20">Mockito</span>
+        </div>
+    </section>
+    <section id="experience" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Experience</h1>
+        <div class="flex flex-col gap-8 w-full max-w-2xl">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+                <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
+                <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold">Android App Developer</h2>
+                        <span class="text-xs sm:text-sm text-gray-500">2024 — Present</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#7F52FF] font-medium mb-2">Fiverr · Upwork</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Building modern Android applications with Kotlin and Jetpack Compose for international clients.
+                        Focused on clean architecture, Material Design 3, and seamless API integrations.
+                    </p>
+                </div>
+            </div>
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+                <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
+                <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold">Java Developer</h2>
+                        <span class="text-xs sm:text-sm text-gray-500">2023 — 2024</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#7F52FF] font-medium mb-2">Fiverr</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Developed Java-based solutions and bug fixes for freelance clients. Gained solid
+                        experience in object-oriented programming, debugging, and client communication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Education</h1>
+        <div class="flex flex-col gap-8 w-full max-w-2xl">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+                <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
+                <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold">Common Core</h2>
+                        <span class="text-xs sm:text-sm text-gray-500">Jun 2025 — Present</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#7F52FF] font-medium mb-2">42 Luanda</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Project-based, peer-to-peer programming curriculum covering C, algorithms,
+                        system programming, and computer science fundamentals.
+                    </p>
+                </div>
+            </div>
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+                <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
+                <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold">B.Sc. in Computer Science</h2>
+                        <span class="text-xs sm:text-sm text-gray-500">Oct 2021 — Jun 2026</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#7F52FF] font-medium mb-2">IMETRO</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                        Graduated with a degree in Computer Science. Built a strong foundation in
+                        software development, algorithms, data structures, and system design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hackathons" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-10 sm:gap-14">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Hackathons</h1>
+        <div class="flex flex-col gap-8 w-full max-w-2xl">
+            <div class="relative pl-8 border-l-2 border-[#7F52FF]/30">
+                <div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-[#7F52FF] border-2 border-gray-900"></div>
+                <div class="bg-gray-800/60 rounded-xl p-5 sm:p-6 border border-gray-700/50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h2 class="text-lg sm:text-xl font-bold">1st Place — RCS × 42 Luanda Hackathon</h2>
+                        <span class="text-xs sm:text-sm text-gray-500">2025</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#7F52FF] font-medium mb-2">Team Kyuubi (9 members) · Infrawatch</p>
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed mb-3">
+                        Built Infrawatch, a service and host monitoring solution with real-time
+                        alerts, GLPI integration, and statistics dashboards. Responsible for
+                        SNMP and GLPI integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-400">TypeScript</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-cyan-500/20 text-cyan-400">React</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-yellow-500/20 text-yellow-400">SNMP</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-400">GLPI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="projects" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-8 sm:gap-12">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Projects</h1>
+        <p class="text-gray-400 text-center max-w-md">Some things I've built</p>
         <div class="relative w-full max-w-5xl">
             <div id="projects-track" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide scroll-smooth">
                 <!-- Project Card - Add more by copying this block -->
@@ -125,25 +251,6 @@
                 </div>
                 <!-- /Project Card -->
 
-                <!-- Placeholder for next project -->
-                <div class="flex-shrink-0 w-full snap-center">
-                    <div class="flex flex-col md:flex-row bg-gray-800/60 rounded-2xl overflow-hidden border border-gray-700/50 min-h-[26rem] md:min-h-[22rem]">
-                        <div class="md:w-1/2 h-64 md:h-full bg-gray-700/20 flex items-center justify-center">
-                            <span class="text-gray-500 text-base sm:text-lg italic">This project is not available yet</span>
-                        </div>
-                        <div class="md:w-1/2 p-5 sm:p-7 flex flex-col justify-between gap-4">
-                            <div>
-                                <h2 class="text-xl sm:text-2xl font-bold mb-2 text-gray-400">Coming soon</h2>
-                                <p class="text-gray-500 text-sm sm:text-base leading-relaxed mb-3">
-                                    Future projects are being built.
-                                </p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-700/40 text-gray-500">Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <button id="prev-project"
@@ -183,8 +290,9 @@
             </a>
         </div>
     </section>
-    <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12">Contact</h1>
+    <section id="contact" class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 gap-4">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Contact</h1>
+        <p class="text-gray-400 text-center max-w-md mb-4 sm:mb-8">Let's work together — send me a message</p>
         <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-4 w-full max-w-sm sm:max-w-md lg:max-w-lg">
             <input type="email" name="email" placeholder="Your email" required
                    class="bg-gray-800 rounded-md px-4 py-3 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base">
@@ -196,6 +304,40 @@
             </button>
         </form>
     </section>
+    <footer class="bg-gray-950 border-t border-gray-800 py-10 sm:py-12 px-4 sm:px-8">
+        <div class="mx-auto max-w-7xl grid grid-cols-2 md:grid-cols-3 gap-8 pb-8 border-b border-gray-800">
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Profiles</h3>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="https://github.com/tesla-j" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/rafael-marcos-41359a21b" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+                    <li><a href="https://www.upwork.com/freelancers/~01e3c18defcdbc0280" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Upwork</a></li>
+                    <li><a href="https://www.fiverr.com/users/rafaelmarcos19" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Fiverr</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-white transition-colors">Download CV</a></li>
+                    <!--<li><a href="mailto:rafael@rmarcos.dev" class="hover:text-white transition-colors">rafael@rmarcos.dev</a></li>-->
+                </ul>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Site Map</h3>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="#skills" class="hover:text-white transition-colors">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-white transition-colors">Experience</a></li>
+                    <li><a href="#education" class="hover:text-white transition-colors">Education</a></li>
+                    <li><a href="#hackathons" class="hover:text-white transition-colors">Hackathons</a></li>
+                    <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                    <li><a href="#freelas" class="hover:text-white transition-colors">Freelancing</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="https://blog.rmarcos.dev" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-sm text-gray-600 text-center pt-8">© 2026 Rafael Marcos</p>
+    </footer>
 <script>
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
